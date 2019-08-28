@@ -29,26 +29,26 @@ if(isset($_POST['username'])) {
 <html>
     <head>
         <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login test</title>
         <style>
-			body {margin: 1em}
+		body {margin: 1em}
         </style>
     </head>
     <body>
-		<h1>Skúšobný prihlasovací formulár</h1>
-		<p>Tento formulár slúži na prezentovanie automatického vyplnenia prihlasovacích údajov pomocou správcu hesiel. Webový prehliadač nebude vyžadovať uloženie prihlasovacích údajov na neskoršie automatické vyplnenie. Odoslané údaje sú až do odhlásenia uložené iba v relácii PHP a inak sa nikam neodosielajú.</p>
-		<ul>
-			<li>Meno = Tibor</li>
-			<li>Heslo = tajne</li>
-		</ul>
+	<h1>Skúšobný prihlasovací formulár</h1>
+	<p>Tento formulár slúži na prezentovanie automatického vyplnenia prihlasovacích údajov pomocou správcu hesiel. Webový prehliadač nebude vyžadovať uloženie prihlasovacích údajov na neskoršie automatické vyplnenie. Odoslané údaje sú až do odhlásenia uložené iba v relácii PHP a inak sa nikam neodosielajú.</p>
+	<ul>
+		<li>Meno = Tibor</li>
+		<li>Heslo = tajne</li>
+	</ul>
         <?php if($_SESSION['username']): ?>
-            <p style="color: green">Úspešne ste sa príhlásili ako používateľ <b><?=$_SESSION['username']?></b>. <a href="?logout=1">Odhlásiť sa</a></p>
+	<p style="color: green">Úspešne ste sa príhlásili ako používateľ <b><?=$_SESSION['username']?></b>. <a href="?logout=1">Odhlásiť sa</a></p>
         <?php endif; ?>
         <form name="login" action="" method="post" autocomplete="off">
-            Meno:  <input style="font-size: 20px; width: 90%; margin: 10px 10px 20px 20px; padding: 10px; font-family: courier" type="text" name="username" value="" autocomplete="new-password" readonly 
+            Meno: <input style="font-size: 20px; width: 90%; margin: 10px 10px 20px 20px; padding: 10px; font-family: courier" type="text" name="username" value="" autocomplete="new-password" readonly 
 onfocus="this.removeAttribute('readonly');" required autofocus /><br />
-            Heslo:  <input style="font-size: 20px; width: 90%; margin: 10px 10px 20px 20px; padding: 10px; font-family: courier" type="password" name="password" value="" autocomplete="new-password" required readonly 
+            Heslo: <input style="font-size: 20px; width: 90%; margin: 10px 10px 20px 20px; padding: 10px; font-family: courier" type="password" name="password" value="" autocomplete="new-password" required readonly 
 onfocus="this.removeAttribute('readonly');" /><br />
             <input style="font-weight: bold; font-size: 20px; margin: 10px 0; padding: 10px; height: auto; width: auto; background: #fdfdfd; border: 1px solid #bbb; border-radius: 10px;" type="submit" name="submit" value="Poslať" />
         </form>
