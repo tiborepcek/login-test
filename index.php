@@ -37,7 +37,7 @@ if(isset($_POST['username'])) {
     </head>
     <body>
 	<h1>Skúšobný prihlasovací formulár</h1>
-	<p>Tento formulár slúži na prezentovanie automatického vyplnenia prihlasovacích údajov pomocou správcu hesiel. Webový prehliadač nebude vyžadovať uloženie prihlasovacích údajov na neskoršie automatické vyplnenie. Odoslané údaje sú až do odhlásenia uložené iba v relácii PHP a inak sa nikam neodosielajú.</p>
+	<p>Tento formulár slúži na prezentovanie automatického vyplnenia prihlasovacích údajov pomocou správcu hesiel. Webový prehliadač nebude vyžadovať uloženie prihlasovacích údajov na neskoršie automatické vyplnenie. Odoslané údaje sú až do odhlásenia uložené iba v relácii PHP a inak sa nikam neodosielajú. Zdrojový kód je umiestnený <a href="https://github.com/tiborepcek/login-test">na GitHube</a>.</p>
 	<ul>
 		<li>Meno = Tibor</li>
 		<li>Heslo = tajne</li>
